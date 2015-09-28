@@ -1,0 +1,16 @@
+<h1>Add an album to Jukebox - <%= @jukebox.name %></h1>
+
+
+<form action="/jukeboxes/<%= @jukebox.id %>" method="post">
+  <label for="artist"> Artist Name: </label>
+  <input id="artist" name="artist" type="text">
+
+  <label for="album"> Album : </label>
+  <input id="album" name="album" type="text">
+
+  <label for="year"> Year: </label>
+  <input id="year" name="year" type="text">
+
+  <button type="submit"> Add Album </button>
+
+</form>

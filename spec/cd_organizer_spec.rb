@@ -3,9 +3,10 @@ require('cd_organizer')
 
 
 describe('Cd') do
-  before ()do
+  before() do
     Cd.clear()
- end
+  end
+  
 
   describe('#artist') do
    it('returns the name of the artist') do

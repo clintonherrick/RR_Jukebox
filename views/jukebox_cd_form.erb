@@ -1,0 +1,18 @@
+<h1> Add a cd to the <%=@jukebox.name() %> </h1>
+
+<form action="/cds" method="post">
+  <input id="jukebox_id" name="jukebox_id" type='hidden' value=' @jukebox.id() %>'>
+
+  <label for='album'>Album info:</label>
+  <input id='album' name='album' type='text'>
+
+
+  <label for='year'>Year:</label>
+  <input id='year' name='year' type='text'>
+
+
+  <label for='artist'>Artist:</label>
+  <input id='artist' name='artist' type='text'>
+
+  <button type="submit"> Add Cd </button>
+</form>

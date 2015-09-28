@@ -1,0 +1,7 @@
+<h1>Jukebox</h1>
+
+<ul>
+  <% @jukeboxes.each() do |jukebox| %>
+    <li><a href="/jukeboxes/<%= jukebox.id()%>"><%= jukebox.name() %></a></li>
+  <% end %>
+</ul>
